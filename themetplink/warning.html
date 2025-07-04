@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAC Address Warning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .warning {
+      background: #ffe4e1;
+      border-left: 5px solid #ff3b3b;
+      padding: 15px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      color: #cc0000;
+      margin-bottom: 20px;
+    }
+    .step {
+      margin-bottom: 25px;      
+
+    }
+    .step h2 {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .step img {
+      max-width: 100%;      
+      border: 1px solid #000;
+      margin: 10px 0;
+
+    }
+    @media (max-width: 600px) {
+      .step h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚠️ Random MAC Address Detected!</h1>
+    <div class="warning">
+      Your device is using a **randomized MAC address**, which is not allowed on this network. <br>
+      Please follow the steps below to disable random MAC and use your real device MAC.
+    </div>
+
+    <div class="step">
+      <h2>📱 Android - How to Turn Off Random MAC</h2>
+      <p>1. Go to <strong>Wi-Fi Settings</strong> → Tap the network name<br>
+         2. Tap <strong>Privacy</strong> or <strong>MAC address type</strong><br>
+         3. Select <strong>Use device MAC</strong>
+         <br>
+         <br>
+         <img src="/img/mac1.jpg" alt="Android MAC Change">
+         <img src="/img/mac2.jpg" alt="Android MAC Change">
+         <img src="/img/mac3.jpg" alt="Android MAC Change">
+      </p>
+    </div>
+
+    <div class="step">
+      <h2>📱 iPhone - How to Disable Private MAC</h2>
+      <!-- <img src="iphone-step.jpg" alt="iPhone MAC Change"> -->
+      <p>1. Go to <strong>Settings</strong> → Wi-Fi<br>
+         2. Tap the “i” next to the network<br>
+         3. Toggle off <strong>Private Address</strong>
+      </p>
+    </div>
+
+    <div class="step">
+      <h2>💻 Windows Laptop</h2>
+      <!-- <img src="windows-step.jpg" alt="Windows MAC Setting"> -->
+      <p>1. Open <strong>Settings</strong> → Network & Internet → Wi-Fi<br>
+         2. Click on the network name<br>
+         3. Set <strong>Random hardware addresses</strong> to <strong>Off</strong>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
